@@ -4,7 +4,6 @@
 @import "compass";
 
 
-
 /// Mixin to customize scrollbars
 /// Beware, this does not work in all browsers
 /// @author Hugo Giraudel
@@ -37,5 +36,5 @@
 @include scrollbars(.5em, slategray);
 
 BODY{
-  color: red;
+
 }

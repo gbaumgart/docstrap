@@ -30,21 +30,28 @@ var template = require('jsdoc/template'),
 var globalUrl = helper.getUniqueFilename('global');
 var indexUrl = helper.getUniqueFilename('index');
 
+console.log('options: ',conf);
+
+//console.trace();
+
 var navOptions = {
   includeDate: conf.includeDate !== false,
   logoFile: conf.logoFile,
   systemName: conf.systemName || "Documentation",
   navType: conf.navType || "vertical",
   footer: conf.footer || "",
-  copyright: conf.copyright || "",
+  copyright: "",
   theme: conf.theme || "simplex",
   syntaxTheme: conf.syntaxTheme || "default",
-  linenums: conf.linenums,
+  //linenums: conf.linenums,
+  linenums: true,
   collapseSymbols: conf.collapseSymbols || false,
-  inverseNav: conf.inverseNav,
-  outputSourceFiles: conf.outputSourceFiles === true,
+  inverseNav: true,
+  //outputSourceFiles: conf.outputSourceFiles === true,
+  outputSourceFiles: true,
   sourceRootPath: conf.sourceRootPath,
-  outputSourcePath: conf.outputSourcePath,
+  //outputSourcePath: conf.outputSourcePath,
+  outputSourcePath: true,
   dateFormat: conf.dateFormat,
   analytics: conf.analytics || null,
   methodHeadingReturns: conf.methodHeadingReturns === true,
